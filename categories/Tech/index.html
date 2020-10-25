@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Build a Personal Blog"/>
+        <meta property="og:title" content="Yuan Tian"/>
     
 
     <!--Open Graph Description-->
@@ -36,7 +36,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="article"/>
+        <meta property="og:type" content="website"/>
     
 
     <!--Page Cover-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>Build a Personal Blog - Yuan Tian</title>
+    <title>Tech - Yuan Tian</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -151,96 +151,51 @@
 </nav>
 
     <!-- Main Content -->
-    <!-- Page Header -->
-<!-- Set your background image for this header in your post front-matter: cover -->
+    
 
+<!-- Page Header -->
+<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>Build a Personal Blog</h1>
-                    
-                    <h2 class="post-subheading">
-                        This article tells the blogger's steps to use Hexo to build static blog on macOS.
-                    </h2>
-                    
-                    <span class="meta">
-                        <!-- Date and Author -->
-                        
-                            Posted by Yuan Tian on
-                        
-                        
-                            2020-10-25
-                        
-                    </span>
+                <div class="site-heading">
+                    <h1>Tech</h1>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-            <!-- Tags and categories -->
-           
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    
-                        
-
-
-<a href="/tags/Hexo/">#Hexo</a>
-
-
-                    
-                </div>
-                <div class="col-lg-4 col-md-5 post-categories">
-                    
-                        
-
-<a href="/categories/Tech/">Tech</a>
-
-                    
-                </div>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             
-
-            <!-- Gallery -->
+                <div class="post-preview">
+    <a href="/2020/10/25/build-blog/">
+        <h1 class="post-title archive">
+            Build a Personal Blog
+        </h1>
+    </a>
+    <p class="post-meta archive">
+        <!-- Date and Author -->
+        
+            Posted by Yuan Tian on
+        
+        2020-10-25
+    </p>
+</div>
             
-
-            <!-- Post Main Content -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>install Xcode through App Store </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Install Xcode Command Line Tools</span></span><br><span class="line">$ xcode-select --install</span><br><span class="line"></span><br><span class="line"><span class="comment"># Install Homebrew</span></span><br><span class="line">$ /usr/bin/ruby -e <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>&quot;</span></span><br><span class="line"></span><br><span class="line">$ brew install git</span><br></pre></td></tr></table></figure>
-
-<h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><p>Node.js is an open-source, cross-platform, back-end, JavaScript runtime environment that executes JavaScript code outside a web browser.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
-
-<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">npm install hexo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> verification</span></span><br><span class="line">hexo version</span><br></pre></td></tr></table></figure>
-
-<h2 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> create a new .md file</span></span><br><span class="line">hexo new [layout] &lt;title&gt;</span><br><span class="line">hexo new &quot;blog_built&quot;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> open the file through IDE</span></span><br><span class="line">tags: [Hexo, notes, ...]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> write it at the bottom of abstract</span></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> write down the content <span class="keyword">in</span> md style</span></span><br></pre></td></tr></table></figure>
-<p>layout: post, page, draft.  <code>./source/</code></p>
-<p>If necessary, you should create draft file at first, and then execute <code>hexo publish draft_file_name</code> to be the post file</p>
-<h2 id="Generate-and-deploy"><a href="#Generate-and-deploy" class="headerlink" title="Generate and deploy"></a>Generate and deploy</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> generate static files</span></span><br><span class="line">hexo g/generate</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> start a server: localhost:4000</span></span><br><span class="line">hexo s/server</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> deploy your website, this action includes &lt;hexo generate&gt;</span></span><br><span class="line">hexo d/deploy</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> update your blog</span></span><br><span class="line">hexo c &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-
-
-
-                
-            </div>
-
-            <!-- Comments -->
-            
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    
-
-
-                </div>
-            
+            <div class="archive-before-pagination"></div>
+            <ul class="pager">
+    
+    
+</ul>
         </div>
     </div>
-</article>
+</div>
+
 
     <!-- Footer -->
     <hr />
